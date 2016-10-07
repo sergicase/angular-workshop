@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS Webpack</title>
+</head>
+<body ng-app="app" ng-strict-di ng-cloak>
+  <!--3/ And we're showing data -->
+  <div ng-controller="AppController as vm">
+     <h1>Shopping list</h1>
+    <li ng-repeat="car in vm.cars">
+        {{ car.name }} - {{ car.speed }}km/h - {{ car.brand}}
+      </li>
+  </div>
+    <!-- Element to be controlled by JS -->
+  <!-- We add built js file -->
+
+  <script src="bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "workshop-interone",
+  "version": "1.0.0",
+  "description": "AngularJS Webpack",
+  "scripts": {
+    "dev": "webpack-dev-server --content-base ./src --progress --history-api-fallback --open",
+    "build": "WEBPACK_ENV=production webpack --progress --hide-modules"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.25.0",
+    "ng-annotate": "^1.2.1",
+    "ng-annotate-loader": "^0.2.0",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
+    "ts-loader": "^0.8.2",
+    "tslint": "^3.15.1",
+    "tslint-loader": "^2.1.5",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0",
+    "webpack": "2.1.0-beta.22",
+    "webpack-dev-server": "^2.1.0-beta.8"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "sass": "^0.5.0",
+    "ts-loader": "^0.8.2"
+  }
+}

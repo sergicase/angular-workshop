@@ -1,6 +1,9 @@
-import { ICar } from './car.interface'
 import * as angular from 'angular'
 
+
+const { listElement } = require('./cars.scss') // tslint:disable-line
+
+import { ICar } from './car.interface'
 import IComponentOption = angular.IComponentOptions;
 
 /// And using that interface helps us to properly configure the component
@@ -26,7 +29,7 @@ export const CarsComponent: IComponentOption = {
       <ul>
         <!-- Now we're using $ctrl instead of vm -->
         <li ng-repeat="car in $ctrl.cars">
-          {{ car.name }} - {{ car.speed }} - {{car.brand}}
+          {{ car.name }} - <span>{{ car.speed }}</span> - {{car.brand}}
         </li>
       </ul>
     </div>

@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^6.0.45",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.25.0",
     "ng-annotate": "^1.2.1",

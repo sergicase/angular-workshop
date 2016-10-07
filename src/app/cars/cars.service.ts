@@ -1,5 +1,5 @@
 import { ICar } from './car.interface'
-export class AppService {
+export class CarsService {
      
 	public cars: ICar[] = [
         { name: 'i3', speed: 240, brand: 'BMW' },

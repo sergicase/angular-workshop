@@ -56,7 +56,8 @@ export const CarsComponent: IComponentOption = {
         </select>
         <!-- Now we're using $ctrl instead of vm -->
         <li ng-repeat="car in $ctrl.cars">
-          {{ car.name }} - <span>{{ car.speed }}</span> - {{car.brand}}
+          {{ car.name }} - <span>{{ car.speed }}</span> - {{car.brand}}<br />
+          <img src="{{ car.image }}" alt="image" style="width:200px">
         </li>
       </ul>
     </div>

@@ -9,6 +9,14 @@ export class CarsService {
         { name: 'Astra', speed: 400, brand: 'Opel', image: 'http://www.opel.de/content/dam/Opel/Europe/master/hq/en/01_Vehicles/01_PassengerCars/Astra%20Hatchback%202015/Redesign/Family/Opel_Astra_2015_Family_Hatchback_1024x440_as16_e01_279.jpg' }
     ];
 
+    public chicks: ICar[] = [
+        { name: 'chick1', speed: 240, brand: '1', image: 'http://65.media.tumblr.com/542f928e74ae0cb422fd4b7b3db19015/tumblr_inline_ng3uppDo7l1t6p1tr.jpg' },
+        { name: 'chick2', speed: 270, brand: '2', image: 'https://chivethebrigade.files.wordpress.com/2012/09/girls-920-22.jpg' },
+        { name: 'chick3', speed: 320, brand: '3', image: 'http://www.sidesinspace.com/wp-content/uploads/2016/03/1455063270140.jpg' },
+        { name: 'chick4', speed: 400, brand: '4', image: 'https://598d5fcf392acad97538-395e64798090ee0a3a571e8c148d44f2.ssl.cf1.rackcdn.com/7393507_daily-abspiration-hot-chicks-with-hot-abs_43f061b2_m.jpg?bg=886B60' },
+        { name: 'chick5', speed: 400, brand: '5', image: 'http://i244.photobucket.com/albums/gg39/wethead69/hot_chick.jpg' }
+    ];
+
      public orderByName (cars: ICar[]) {
        return cars.sort(function (a, b) {
             let a_aux:string  = a.name.toLowerCase();
@@ -40,6 +48,10 @@ export class CarsService {
     }; 
 
     public getCars (){
-        return  this.cars;
+        return this.cars;
+    }
+
+    public getChicks() {
+        return this.chicks;
     }
 }

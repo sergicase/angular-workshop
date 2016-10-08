@@ -18,6 +18,7 @@ module.exports = config => {
 
     browsers: [
       'Chrome',
+      'Firefox'
     ],
 
     singleRun: true,

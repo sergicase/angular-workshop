@@ -16,6 +16,7 @@ export const CarsComponent: IComponentOption = {
   //10/ Now controller and template are next to each other
   controller: class {
     public cars: ICar[]
+    public chicks: ICar[]
     public order_by: string
     public car_service: CarsService
 
@@ -24,6 +25,7 @@ export const CarsComponent: IComponentOption = {
 
       this.car_service = Cars
       this.cars = this.car_service.cars
+      this.chicks = this.car_service.chicks
     }
 
     sortList(){
@@ -58,6 +60,15 @@ export const CarsComponent: IComponentOption = {
         <li ng-repeat="car in $ctrl.cars">
           {{ car.name }} - <span>{{ car.speed }}</span> - {{car.brand}}<br />
           <img src="{{ car.image }}" alt="image" style="width:200px">
+        </li>
+      </ul>
+      <br><br>
+      <h1>Now the good part of the project... ;)</h1>
+       <ul>
+        <!-- Now we're using $ctrl instead of vm -->
+        <li ng-repeat="chick in $ctrl.chicks">
+          {{ chick.name }} - <span>{{ chick.speed }}</span> - {{chick.brand}}<br />
+          <img src="{{ chick.image }}" alt="image" style="width:200px">
         </li>
       </ul>
     </div>

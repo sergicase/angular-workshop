@@ -4,14 +4,27 @@
   "description": "AngularJS Webpack",
   "scripts": {
     "dev": "webpack-dev-server --content-base ./src --progress --history-api-fallback --open",
-    "build": "WEBPACK_ENV=production webpack --progress --hide-modules"
+    "build": "WEBPACK_ENV=production webpack --progress --hide-modules",
+    "test": "karma start"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@types/angular-mocks": "^1.5.5",
+    "@types/jasmine": "^2.5.35",
     "@types/node": "^6.0.45",
+    "angular-mocks": "^1.5.8",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.25.0",
+    "jasmine": "^2.5.2",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^1.8.0",
     "ng-annotate": "^1.2.1",
     "ng-annotate-loader": "^0.2.0",
     "node-sass": "^3.10.1",

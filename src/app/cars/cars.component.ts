@@ -19,10 +19,9 @@ export const CarsComponent: IComponentOption = {
     public order_by: string
     public car_service: CarsService
 
-    constructor(Cars: CarsService) {
+    constructor(cars: ICar[]) {
       'ngInject';
 
-      this.car_service = Cars
       this.cars = this.car_service.cars
     }
 

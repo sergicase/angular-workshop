@@ -8,7 +8,6 @@ export const AppComponent: IComponentOptions = {
 
     constructor(Cars: CarsService) {
       'ngInject';
-
       this.cars = Cars.cars;
     }
   },

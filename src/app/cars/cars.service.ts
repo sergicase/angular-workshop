@@ -9,6 +9,13 @@ export class CarsService {
         { name: 'Astra', speed: 400, brand: 'Opel', image: 'http://www.opel.de/content/dam/Opel/Europe/master/hq/en/01_Vehicles/01_PassengerCars/Astra%20Hatchback%202015/Redesign/Family/Opel_Astra_2015_Family_Hatchback_1024x440_as16_e01_279.jpg' }
     ];
 
+    public motorbikes: ICar[] = [
+        { name: 'FZ-10', speed: 240, brand: 'Yamaha', image:'https://www.yamaha-motor.ca/images/pages/products/units/MC/small/2017_FZ-10_Black_3_t.png' },
+        { name: 'Cbhornet', speed: 270, brand: 'Honda', image: 'https://media.zigcdn.com/media/model/2016/Feb/honda_cbhornet160r_420x210.jpg' },
+        { name: 'XDiavel', speed: 320, brand: 'Ducati', image: 'http://www.ducati.com/cms-web/upl/MediaGalleries/323/1/MediaGallery_1323861/Color_XDiavel-s_01_1067x600.jpg' },
+        { name: 'BB', speed: 400, brand: 'Harley-Davidson', image: 'https://s-media-cache-ak0.pinimg.com/originals/45/bb/53/45bb53e81a247acda9eac77f6b885952.jpg' },
+        { name: 'GSX', speed: 400, brand: 'Suzuki', image: 'http://www.totalmotorcycle.com/motorcycles/2015/2015-Suzuki-GSX-R1000d.jpg' }
+    ]
      public orderByName (cars: ICar[]) {
        return cars.sort(function (a, b) {
             let a_aux:string  = a.name.toLowerCase();
@@ -41,5 +48,9 @@ export class CarsService {
 
     public getCars (){
         return  this.cars;
+    }
+
+    public getMotorbikes (){
+        return this.motorbikes;
     }
 }
